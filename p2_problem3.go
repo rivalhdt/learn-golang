@@ -4,9 +4,10 @@ import "fmt"
 
 func primeNumber(number int) bool {
 	var result bool
-	for i := 2; number > 2; i++ {
+	for i := 2; number > i; i++ {
 		if number%i == 0 {
 			result = false
+			break
 		} else {
 			result = true
 		}
