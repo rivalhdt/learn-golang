@@ -16,9 +16,6 @@ func primeNumber(number int) bool {
 }
 
 func main() {
-	fmt.Println(primeNumber(11))
-	fmt.Println(primeNumber(13))
-	fmt.Println(primeNumber(17))
-	fmt.Println(primeNumber(20))
-	fmt.Println(primeNumber(35))
+	fmt.Println(primeNumber(2))
+	fmt.Println(primeNumber(1))
 }
