@@ -1,12 +1,5 @@
-class KataSensor:
-
-    def __init__(self, kata):
-        self.kata = kata
-
-daftar_kata = [
-    "asu",
-    "anjing",
-]
+from daftar_kata import daftar_kata
+from class_sensor import KataSensor
 
 sensor = KataSensor(daftar_kata)
 
@@ -27,3 +20,8 @@ is_on = True
 while is_on:
     phrase = input("Masukan kata: ")
     print(sensor_kata(phrase))
+    if phrase == "tambah":
+        tambah = input("Tambahkan kata: ")
+        sensor.tambah_kata([tambah])
+    elif phrase == "cek":
+        print(sensor.kata)
